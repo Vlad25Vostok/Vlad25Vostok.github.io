@@ -1,0 +1,4 @@
+@mixin bgi ($name) {
+	background: url("../../img/fon/bg-#{$name}.png") center center no-repeat;
+	background-size: cover;
+ }

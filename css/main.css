@@ -1,0 +1,308 @@
+@font-face {
+  font-family: 'Lifehack';
+  src: url("/fonts/Lifehack-Medium.woff2") format("woff2"), url("/fonts/Lifehack-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("/fonts/Ubuntu/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/Ubuntu/Ubuntu-Medium.woff2") format("woff2"), url("/fonts/Ubuntu/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("/fonts/Ubuntu/Ubuntu-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("/fonts/Ubuntu/Ubuntu.woff2") format("woff2"), url("/fonts/Ubuntu/Ubuntu.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Gagalin';
+  src: url("/fonts/Gagalin/Gagalin-Regular.woff2") format("woff2"), url("/fonts/Gagalin/Gagalin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  box-sizing: border-box; }
+
+html, body, ul {
+  padding: 0;
+  margin: 0;
+  height: 100%; }
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+
+.main-container {
+  display: flex; }
+
+.index-container {
+  position: relative; }
+
+button {
+  border: none;
+  cursor: pointer;
+  background: transparent; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.section {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto; }
+
+.sidebar {
+  position: fixed;
+  top: 90px;
+  right: 30px;
+  z-index: 10; }
+  .sidebar__item {
+    margin: 0 0 20px 0;
+    list-style-type: none; }
+  .sidebar__link {
+    width: 16px;
+    height: 16px;
+    display: block;
+    border-radius: 50%;
+    position: relative; }
+    .sidebar__link:before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      border-radius: 50%;
+      width: 8px;
+      height: 8px; }
+
+.sidebar__item.active .sidebar__link {
+  border: 1px solid #fff; }
+
+.index {
+  background: url("../../img/fon/bg-burger.png") center center no-repeat;
+  background-size: cover; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px; }
+
+.header__right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.header__order-btn {
+  margin-left: 15px; }
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  color: #fff; }
+
+.nav__item {
+  display: flex;
+  align-items: center;
+  margin-right: 13px;
+  list-style-type: none; }
+  .nav__item:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
+    margin-left: 15px; }
+  .nav__item:last-child {
+    margin-right: 0; }
+    .nav__item:last-child:after {
+      display: none; }
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px; }
+
+.btn {
+  background: #e45028;
+  border-radius: 5px;
+  padding: 10px 13px;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px; }
+
+.main-content {
+  flex: 0.8;
+  display: flex;
+  align-items: center; }
+
+.right-content {
+  margin-top: 140px;
+  margin-left: 20px; }
+  .right-content__par {
+    font-family: 'Lifehack', Arial, Helvetica, sans-serif;
+    font-weight: 500px;
+    font-style: normal;
+    font-size: 65px;
+    color: #fff;
+    line-height: 1; }
+
+.title {
+  font-family: 'Gagalin', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 72px;
+  margin: 0;
+  margin-bottom: 20px;
+  line-height: 1; }
+
+.orange {
+  color: #f9b43b; }
+
+.black {
+  color: #2f3234;
+  text-align: center; }
+
+.white {
+  color: #fff; }
+
+.arrow {
+  display: block;
+  position: absolute;
+  bottom: 40px;
+  left: 50%; }
+
+.best {
+  background: url("../../img/fon/bg-best.png") center center no-repeat;
+  background-size: cover; }
+  .best__we {
+    padding-top: 135px; }
+  .best__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    text-align: center; }
+  .best__pic {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .best__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 33.3%; }
+  .best__item h3 {
+    font-family: 'Lifehack', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2f3234; }
+  .best__item p {
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    color: #2f3234;
+    line-height: 24.02px; }
+
+.reviews__list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%; }
+
+.reviews__item {
+  display: flex;
+  width: 25%;
+  height: 50%;
+  position: relative; }
+  .reviews__item:hover .reviews__bcg {
+    opacity: 1; }
+  .reviews__item:hover .reviews__blog {
+    transform: scale(1);
+    opacity: 1; }
+
+.reviews__photo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.reviews__blog {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 230px;
+  transform: scale(0.8);
+  transition: .3s;
+  opacity: 0; }
+
+.reviews h3 {
+  font-family: 'Gagalin';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  color: #fff; }
+
+.reviews p {
+  font-family: 'Ubuntu';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 14px;
+  color: #fff;
+  line-height: 24px; }
+
+.reviews__link {
+  background: #2f3234;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-style: normal;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff; }
+
+.reviews__bcg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .3s;
+  opacity: 0; }
+
+/*# sourceMappingURL=main.css.map */

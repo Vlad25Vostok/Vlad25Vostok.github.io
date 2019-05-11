@@ -1,0 +1,43 @@
+
+  .nav__list {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .nav__item {
+    display: flex;
+    align-items: center;
+    margin-right: 13px;
+    list-style-type: none;
+  
+    &:after {
+      content: "";
+      display: block;
+      width: 4px;
+      height: 4px;
+      background: #fff;
+      border-radius: 50%;
+      margin-left: 15px;
+    }
+  
+    &:last-child {
+      margin-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+  
+  
+  .nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family:'Ubuntu', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+  }
+
