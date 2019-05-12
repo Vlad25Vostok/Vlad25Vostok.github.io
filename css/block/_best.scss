@@ -1,10 +1,6 @@
 .best {
   @include bgi(best);
 
-  &__we {
-    padding-top: 135px;
-  }
-
   &__list {
     display: flex;
     justify-content: space-between;
