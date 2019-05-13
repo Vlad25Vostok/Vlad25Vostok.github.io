@@ -258,18 +258,17 @@ table {
   width: 25%;
   height: 50%;
   position: relative; }
-  .reviews__item:hover .reviews__bcg {
-    opacity: 1; }
+  .reviews__item:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: .3s; }
   .reviews__item:hover .reviews__blog {
     transform: scale(1);
     opacity: 1; }
 
-.reviews__photo {
+.reviews__avatar {
+  object-fit: cover;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
+  height: 100%; }
 
 .reviews__blog {
   position: absolute;
@@ -306,15 +305,5 @@ table {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff; }
-
-.reviews__bcg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  transition: .3s;
-  opacity: 0; }
 
 /*# sourceMappingURL=main.css.map */
